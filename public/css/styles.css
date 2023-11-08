@@ -57,7 +57,7 @@ header div.logo {
 
 .header-top p.compra {
     text-align: center;
-    margin-top: 10px;
+    font-size: 16px;
 }
 
 header nav {
@@ -358,6 +358,11 @@ form.login .error {
 /* MEDIA DESKTOP */
 
 @media (min-width: 992px){
+    /* HEADER */
+    header nav ul li {
+        font-size: 16px;
+    }
+
     /* MAIN */
     main article {
         width: 22%;
