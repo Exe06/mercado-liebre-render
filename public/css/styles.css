@@ -34,7 +34,8 @@ header div.logo {
 .search-form {
     padding: 2px;
     font-size: 11px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .search-form input {
@@ -118,6 +119,7 @@ p {
 main article {
     margin-bottom: 10px;
     background-color: #fff;
+    transition: all 500ms;
 }
 
 main article:hover {
@@ -168,12 +170,13 @@ article:hover .envio {
 .descripcion {
     font-size: 16px;
     opacity: 0.5;
-    display: none;
+    visibility: hidden;
     margin-top: 20px;
+    transition: all 100ms;
 }
 
 main article:hover .descripcion {
-    display: block;
+    visibility: visible;
 }
 
 /* FOOTER */
@@ -251,6 +254,10 @@ form.registro .radio {
 
 form.registro .avatar {
     margin-bottom: 10px;
+}
+
+form.registro .avatar input {
+    width: 100%;
 }
 
 form.registro .container-boton {
@@ -352,6 +359,9 @@ form.login .error {
     /* REGISTRO */
     form.registro, form.login {
         max-width: 800px;
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 5px 5px 15px rgb(100, 100, 100)
     }
 }
 
